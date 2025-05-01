@@ -1,0 +1,5 @@
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
+Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
+StableRNGs = "860ef19b-820b-49d6-a774-d7a799459cd3"
