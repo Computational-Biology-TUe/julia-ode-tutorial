@@ -1,55 +1,50 @@
 # Simulation, Analysis and Parameter Estimation of Biological ODE models in Julia
 Welcome! This is the repository for the **Julia Tutorial for ODE Modelling** for the **Computational Biology** group at the Department of Biomedical Engineering of Eindhoven University of Technology. Read below how to get started!
 
+> [!WARNING]
+> This repository is a work in progress. I am continuously adding new content and improving the existing material. If you have any suggestions or feedback, please add an issue! Or not, and wait for me to think of it myself. I am not very smart, and I am not very fast, but I am very good at procrastinating. So if you have a suggestion, please let me know! I will be happy to add it to my list of things to do. And then forget about it. But I will try my best to get to it eventually. Also, if you happen to find a solution yourself, add a pull request, so I can steal your work and take all the credit. Just kidding! I will give you credit, I promise. But seriously, if you have any suggestions or feedback, please let me know. I am always looking for ways to improve this repository and make it more useful for everyone. Thank you for your understanding!
+
 ## Getting started
-This getting started guide will help you to set up your Julia environment and run the examples in this repository. We will assume that you have little experience with Julia and may not even have installed it yet. If you are already familiar with Julia, and you have a working Julia installation, you can skip to the **Environment setup** section.
+This getting started guide will help you to set up your Julia environment and run the examples in this repository. We will assume that you have little experience with Julia and may not even have installed it yet. If you are already familiar with Julia, and you have a working Julia installation, you can skip to the **Setup**
 
 ### Installing Julia
 If you have not installed Julia, we will now guide you through the installation and the initial set-up. We will give some useful tips and tricks to set up a Julia installation that you'll be able to use comfortably after this tutorial.
 
-### Environment setup
 > [!NOTE]
 > This may not work for everyone, but it is a good first try. If you have any issues, let us know!
 
-1. **Install juliaup**: `juliaup` is the Julia version manager. It allows you to install multiple versions of Julia and switch between them easily.
+1. **Install [juliaup](https://github.com/JuliaLang/juliaup)**: `juliaup` is the Julia version manager. It allows you to install multiple versions of Julia and switch between them easily.
 
 2. **Install Julia**: You can install Julia using `juliaup` by running the following command in your terminal:
    ```bash
    juliaup add release
    ```
 
-3. **Install VSCode**: If you don't have it yet, we recommend using Visual Studio Code (VSCode) as your IDE. You can download it from [here](https://code.visualstudio.com/).
+### Setup
 
-4. **Install the Julia extension for VSCode**: Open VSCode and go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window. Search for "Julia" and install the extension by Julia Computing.
+1. **Install Pluto**: The tutorial notebooks are written in [Pluto.jl](https://plutojl.org/), a reactive notebook environment for Julia. You can install Pluto by running the following commands in your terminal:
 
-5. **Install IJulia**: For optimal Jupyter notebook support, open a terminal in VSCode and run the following commands.
+First, start Julia:
+   ```bash
+   julia
+   ```
 
-```
-julia
-```
+Then, press `]` to enter the package manager, and run:
+   ```julia
+   pkg> add Pluto
+   ```
 
-Press `]` to enter the package manager, and then run:
-```
-pkg> add IJulia
-```
-
-6. **Install the project environment**: In VSCode, click open folder and select the folder where you cloned this repository. Open a terminal in VSCode and run the following commands:
-
-```
-julia
-```
-
-Press `]` to enter the package manager, and then run:
-```
-pkg> activate .
-pkg> instantiate
-```
-This will install all the required packages for this tutorial.
+2. **Run Pluto**: After installing Pluto, you can run it by executing the following command in the Julia REPL:
+   ```julia
+   using Pluto
+   Pluto.run()
+   ```
+   This will open a new tab in your web browser with the Pluto interface. From there, you can open and edit the notebooks in this repository. Pluto takes care of the installation of all the required packages for you.
 
 ## Organization of the tutorial
-The tutorial is organized in a series of Jupyter notebooks. Each notebook contains a specific topic related to ODE modelling, simulation, and parameter estimation. The notebooks are organized in the following way:
+The tutorial is organized in a series of Pluto notebooks. Each notebook contains a specific topic related to ODE modelling, simulation, and parameter estimation. The notebooks are organized in the following way:
 
-- `1-julia-basics.ipynb`: Introduction to Julia and basic syntax.
-- `2-ode-simulation.ipynb`: Introduction to ODE simulation and visualization.
+<!-- - `1-julia-basics.ipynb`: Introduction to Julia and basic syntax. -->
+- `2-ode-simulation.jl`: Introduction to ODE simulation and visualization.
 
-Other notebooks will be added.
+Other notebooks will be added later.
