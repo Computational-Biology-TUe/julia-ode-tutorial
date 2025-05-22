@@ -2,7 +2,7 @@
 Welcome! This is the repository for the **Julia Tutorial for ODE Modelling** for the **Computational Biology** group at the Department of Biomedical Engineering of Eindhoven University of Technology. Read below how to get started!
 
 > [!WARNING]
-> This repository is a work in progress. I am continuously adding new content and improving the existing material. If you have any suggestions or feedback, please add an issue! Or not, and wait for me to think of it myself. I am not very smart, and I am not very fast, but I am very good at procrastinating. So if you have a suggestion, please let me know! I will be happy to add it to my list of things to do. And then forget about it. But I will try my best to get to it eventually. Also, if you happen to find a solution yourself, add a pull request, so I can steal your work and take all the credit. Just kidding! I will give you credit, I promise. But seriously, if you have any suggestions or feedback, please let me know. I am always looking for ways to improve this repository and make it more useful for everyone. Thank you for your understanding!
+> This repository is a work in progress. I am continuously adding new content and improving the existing material. If you have any suggestions or feedback, please add an issue! I am always looking for ways to improve this repository and make it more useful for everyone. Thank you for your understanding!
 
 ## Getting started
 This getting started guide will help you to set up your Julia environment and run the examples in this repository. We will assume that you have little experience with Julia and may not even have installed it yet. If you are already familiar with Julia, and you have a working Julia installation, you can skip to the **Setup**
